@@ -123,7 +123,7 @@ INSERT INTO dna_rna_link VALUES (
 	'AE014134.6', 
 	105, 
 	'provisional', 
-	2020-04-20
+	'2020-04-20'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -131,7 +131,7 @@ INSERT INTO dna_rna_link VALUES (
 	'AE014134.6', 
 	108, 
 	'provisional', 
-	2020-04-20
+	'2020-04-20'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -139,7 +139,7 @@ INSERT INTO dna_rna_link VALUES (
 	'AE014134.6', 
 	105, 
 	'provisional', 
-	2020-04-20
+	'2020-04-20'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -147,7 +147,7 @@ INSERT INTO dna_rna_link VALUES (
 	'AE014134.6', 
 	108, 
 	'provisional', 
-	2020-04-20
+	'2020-04-20'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -155,7 +155,7 @@ INSERT INTO dna_rna_link VALUES (
 	'NM_001273580.1', 
 	105, 
 	'curated', 
-	2020-04-22
+	'2020-04-22'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -163,7 +163,7 @@ INSERT INTO dna_rna_link VALUES (
 	'NM_001299055.1', 
 	108, 
 	'curated', 
-	2020-04-22
+	'2020-04-22'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -171,7 +171,7 @@ INSERT INTO dna_rna_link VALUES (
 	'NM_057816.5', 
 	105, 
 	'curated', 
-	2020-04-22
+	'2020-04-22'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -179,7 +179,7 @@ INSERT INTO dna_rna_link VALUES (
 	'NM_057828.4', 
 	108, 
 	'curated', 
-	2020-04-22
+	'2020-04-22'
 );
 
 INSERT INTO dna_rna_link VALUES (
@@ -187,5 +187,5 @@ INSERT INTO dna_rna_link VALUES (
 	'XM_009317739.1', 
 	114, 
 	'refseq', 
-	2015-06-09
+	'2015-06-09'
 );
