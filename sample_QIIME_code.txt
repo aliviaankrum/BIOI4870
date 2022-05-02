@@ -1,0 +1,26 @@
+# importing sample ERR1072624 into QIIME in Casava 1.8 format as
+# demultiplexed single end sequences which outputs the artifact 
+# demux_seqs.qza
+qiime tools import --type 'SampleData[SequencesWithQuality]' --input-path ERR1072624 --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path ./demux_seqs.qza
+Imported ERR1072624 as CasavaOneEightSingleLanePerSampleDirFmt to ./demux_seqs.qza
+
+# denoising to ASVs via DADA2 which outputs 3 artifacts 
+qiime dada2 denoise-single   --i-demultiplexed-seqs ./demux_seqs.qza   --p-trunc-len 150   --o-table ./dada2_table.qza   --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza
+Saved FeatureTable[Frequency] to: ./dada2_table.qza
+Saved FeatureData[Sequence] to: ./dada2_rep_set.qza
+Saved SampleData[DADA2Stats] to: ./dada2_stats.qza
+
+# taxonomic classification via a Bayes machine-learning classifier
+# to a Greengenes reference set which outputs 1 artifact
+qiime feature-classifier classify-sklearn \
+>   --i-reads ./dada2_rep_set.qza \
+>   --i-classifier ./gg-13-8-99-515-806-nb-classifier.qza \
+>   --o-classification ./taxonomy.qza
+Saved FeatureData[Taxonomy] to: ./taxonomy.qza
+
+# tabulate output to be visualized in QIIME2 View 
+qiime metadata tabulate \
+>   --m-input-file ./taxonomy.qza \
+>   --o-visualization ./taxonomy.qzv
+Saved Visualization to: ./taxonomy.qzv
+
