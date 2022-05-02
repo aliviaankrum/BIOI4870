@@ -1,0 +1,29 @@
+Query 1: 
+Select your age: 40s
+Select your sex: female
+When was your last dose of antibiotics?: I have not taken antibiotics in the past year.
+Have you ever been diagnosed with diabetes?: I do not have this condition.
+Have you ever been diagnosed with inflammatory bowel disease (IBD)?: I do not have this condition.
+How long do you sleep on an average night?: 7-8 hours.
+
+Number of results: 61
+
+Query 2:
+Select your age: 30s
+Select your sex: female
+When was your last dose of antibiotics?: 6 months
+Have you ever been diagnosed with diabetes?: I do not have this condition.
+Have you ever been diagnosed with inflammatory bowel disease (IBD)?: I do not have this condition.
+How long do you sleep on an average night?: 6-7 hours.
+
+Number of results: 70
+
+Query 3:
+Select your age: 60s
+Select your sex: female
+When was your last dose of antibiotics?: I have not taken antibiotics in the past year. 
+Have you ever been diagnosed with diabetes?: I do not have this condition.
+Have you ever been diagnosed with inflammatory bowel disease (IBD)?: I do not have this condition.
+How long do you sleep on an average night?: 8 or more hours.
+
+Number of results: 83
